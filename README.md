@@ -1,1 +1,1 @@
-# salon-booking
+# beauty-ecommerce
