@@ -45,24 +45,28 @@ async function seedAdmin() {
   );
   const User = mongoose.models.User || mongoose.model("User", userSchema);
 
-  const ADMIN_EMAIL = "admin@crazybeautybeauty.vn";
-  const ADMIN_PASSWORD = "Admin@123456";
+  const ADMIN_EMAIL = "thanhnhung1909@admin.com";
+  const ADMIN_PASSWORD = "thanhnhung1909";
 
-  let admin = await User.findOne({ email: ADMIN_EMAIL });
+  let admin = await User.findOne({
+    $or: [{ email: ADMIN_EMAIL }, { role: "admin" }],
+  });
   if (!admin) {
     const hash = await bcrypt.hash(ADMIN_PASSWORD, 10);
     admin = await User.create({
-      name: "Admin Crazy BeautyBeauty",
+      name: "Admin Crazy Beauty",
       email: ADMIN_EMAIL,
       password: hash,
       role: "admin",
     });
     console.log(`  ✅ Admin tạo mới: ${admin._id}`);
-  } else if (admin.role !== "admin") {
-    await User.updateOne({ _id: admin._id }, { role: "admin" });
-    console.log(`  ✅ Đã nâng quyền admin cho: ${ADMIN_EMAIL}`);
   } else {
-    console.log(`  ℹ️  Admin đã tồn tại: ${admin._id}`);
+    admin.email = ADMIN_EMAIL;
+    admin.password = await bcrypt.hash(ADMIN_PASSWORD, 10);
+    admin.role = "admin";
+    admin.provider = "local";
+    await admin.save();
+    console.log(`  ✅ Đã cập nhật thông tin admin: ${admin._id}`);
   }
 
   await mongoose.disconnect();
@@ -97,7 +101,7 @@ async function seedBrands(token) {
   console.log("\n🏷️  Tạo Brands...");
   const brands = [
     {
-      name: "Crazy BeautyBeauty",
+      name: "Crazy Beauty",
       description: "Mỹ phẩm chăm sóc da và làm đẹp chính hãng",
       image: "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
@@ -595,8 +599,8 @@ async function main() {
   console.log(`   ✅ Categories: ${categories.length}`);
   console.log(`   ✅ Products:   ${count}`);
   console.log("\n📌 Tài khoản Admin:");
-  console.log("   Email:    admin@crazybeautybeauty.vn");
-  console.log("   Password: Admin@123456");
+  console.log("   Email:    thanhnhung1909@admin.com");
+  console.log("   Password: thanhnhung1909");
   console.log("=".repeat(50));
 }
 

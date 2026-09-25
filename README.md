@@ -1,4 +1,4 @@
-# Fashion Website – Microservices E-commerce Platform
+# Crazy Beauty – Microservices E-commerce Platform
 
 ## Giới thiệu dự án
 
@@ -19,13 +19,13 @@ Crazy Beauty là một nền tảng thương mại điện tử hiện đại x�
 
 #### **Tài khoản Admin (Full quyền)**
 
-- **Email:** `vominhtu1212004@gmail.com`
-- **Password:** `1234567`
+- **Email:** `thanhnhung1909@admin.com`
+- **Password:** `thanhnhung1909`
 - **Quyền:** Quản lý sản phẩm, đơn hàng, người dùng, thống kê, chat hỗ trợ
 
 #### **Tài khoản User (Có dữ liệu mẫu)**
 
-- **Email:** `vominhtu1@gmail.com`
+- **Email:** `user@gmail.com`
 - **Password:** `123456`
 - **Lợi ích:** Lịch sử đơn hàng, địa chỉ, giỏ hàng
 
@@ -142,11 +142,5 @@ npm run build
 npm run preview
 ```
 
-
-
-
 ---
 
-## License
-
-MIT License - Tự do sử dụng cho mục đích học tập
