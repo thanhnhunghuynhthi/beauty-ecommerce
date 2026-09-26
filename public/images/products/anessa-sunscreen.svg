@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbee"/>
+      <stop offset="100%" stop-color="#fdf0cc"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e6b800"/>
+      <stop offset="50%" stop-color="#ffdb4d"/>
+      <stop offset="100%" stop-color="#cc9900"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg3)" rx="30"/>
+  <g transform="translate(140, 60)">
+    <!-- Cap -->
+    <path d="M 30 0 L 80 0 Q 90 0 90 10 L 90 40 L 20 40 L 20 10 Q 20 0 30 0 Z" fill="url(#gold)"/>
+    <!-- Bottle Oval Body -->
+    <path d="M 15 45 Q 15 40 30 40 L 80 40 Q 95 40 95 45 L 105 230 Q 105 260 55 260 Q 5 260 5 230 Z" fill="url(#gold)"/>
+    <!-- Sun Logo -->
+    <circle cx="55" cy="110" r="22" fill="#ffffff" opacity="0.9"/>
+    <circle cx="55" cy="110" r="16" fill="#e6a100"/>
+    <!-- Text -->
+    <text x="55" y="155" font-size="14" font-family="Arial" font-weight="bold" fill="#ffffff" text-anchor="middle">ANESSA</text>
+    <text x="55" y="175" font-size="8" font-family="Arial" font-weight="bold" fill="#ffffff" text-anchor="middle">PERFECT UV</text>
+    <text x="55" y="190" font-size="7" font-family="Arial" fill="#ffffff" text-anchor="middle">SUNSCREEN MILK</text>
+    <text x="55" y="215" font-size="10" font-family="Arial" font-weight="bold" fill="#ffffff" text-anchor="middle">SPF 50+ PA++++</text>
+  </g>
+</svg>

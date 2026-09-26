@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f7fe"/>
+      <stop offset="100%" stop-color="#e2ecfe"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="50%" stop-color="#0088ff"/>
+      <stop offset="100%" stop-color="#0044aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="30"/>
+  <g transform="translate(140, 60)">
+    <!-- Cap -->
+    <rect x="35" y="0" width="50" height="30" rx="5" fill="#ffffff" stroke="#d0d0d0" stroke-width="2"/>
+    <rect x="40" y="30" width="40" height="15" fill="#e5e5e5"/>
+    <!-- Bottle -->
+    <path d="M 15 50 Q 15 45 25 45 L 95 45 Q 105 45 105 50 L 115 250 Q 115 270 95 270 L 25 270 Q 5 270 5 250 Z" fill="url(#bottle)"/>
+    <!-- Label -->
+    <rect x="20" y="80" width="80" height="150" rx="4" fill="#ffffff" opacity="0.95"/>
+    <!-- Logo square -->
+    <rect x="35" y="95" width="50" height="12" fill="#0077dd"/>
+    <text x="60" y="104" font-size="8" font-family="Arial" font-weight="bold" fill="#ffffff" text-anchor="middle">LA ROCHE</text>
+    <text x="60" y="122" font-size="9" font-family="Arial" font-weight="bold" fill="#222" text-anchor="middle">EFFACLAR</text>
+    <text x="60" y="135" font-size="7" font-family="Arial" fill="#0066cc" text-anchor="middle">GEL PURIFIANT</text>
+    <text x="60" y="150" font-size="6" font-family="Arial" fill="#555" text-anchor="middle">Sữa Rửa Mặt Da Dầu</text>
+    <text x="60" y="215" font-size="10" font-family="Arial" font-weight="bold" fill="#0066cc" text-anchor="middle">200 ml</text>
+  </g>
+</svg>

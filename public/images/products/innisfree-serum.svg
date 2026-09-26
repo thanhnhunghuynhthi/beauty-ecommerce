@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0faf4"/>
+      <stop offset="100%" stop-color="#d7f3e3"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d8659"/>
+      <stop offset="50%" stop-color="#3d9966"/>
+      <stop offset="100%" stop-color="#1f5d3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg4)" rx="30"/>
+  <g transform="translate(145, 55)">
+    <!-- Pump Cap -->
+    <rect x="40" y="0" width="30" height="15" fill="#222"/>
+    <rect x="45" y="15" width="20" height="25" fill="#888"/>
+    <!-- Bottle -->
+    <path d="M 20 40 L 90 40 Q 100 40 100 50 L 100 240 Q 100 255 80 255 L 30 255 Q 10 255 10 240 L 10 50 Q 10 40 20 40 Z" fill="url(#green)"/>
+    <!-- Label -->
+    <rect x="22" y="80" width="66" height="130" rx="4" fill="#ffffff" opacity="0.95"/>
+    <text x="55" y="105" font-size="9" font-family="Arial" font-weight="bold" fill="#1f5d3d" text-anchor="middle">innisfree</text>
+    <text x="55" y="125" font-size="8" font-family="Arial" font-weight="bold" fill="#222" text-anchor="middle">GREEN TEA SEED</text>
+    <text x="55" y="140" font-size="7" font-family="Arial" fill="#2d8659" text-anchor="middle">HYALURONIC SERUM</text>
+    <text x="55" y="195" font-size="9" font-family="Arial" font-weight="bold" fill="#1f5d3d" text-anchor="middle">80 ml</text>
+  </g>
+</svg>

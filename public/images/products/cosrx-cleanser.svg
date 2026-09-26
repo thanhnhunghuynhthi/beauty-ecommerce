@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8f6"/>
+      <stop offset="100%" stop-color="#ffede8"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0e0e0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg5)" rx="30"/>
+  <g transform="translate(145, 50)">
+    <!-- Tube Body -->
+    <path d="M 15 20 L 95 20 Q 100 20 100 25 L 90 220 Q 80 230 55 230 Q 30 230 20 220 L 10 25 Q 10 20 15 20 Z" fill="url(#tube)" stroke="#ddd"/>
+    <!-- Tube Top Crimp -->
+    <rect x="15" y="10" width="80" height="10" fill="#ccc"/>
+    <!-- Tube Cap -->
+    <rect x="35" y="230" width="40" height="25" rx="3" fill="#ffffff" stroke="#ccc"/>
+    <!-- Red Accent Box -->
+    <rect x="25" y="60" width="60" height="35" fill="#e63946" rx="3"/>
+    <text x="55" y="82" font-size="12" font-family="Arial" font-weight="bold" fill="#ffffff" text-anchor="middle">COSRX</text>
+    <text x="55" y="115" font-size="8" font-family="Arial" font-weight="bold" fill="#222" text-anchor="middle">Low pH Good Morning</text>
+    <text x="55" y="130" font-size="7" font-family="Arial" fill="#e63946" text-anchor="middle">GEL CLEANSER</text>
+    <text x="55" y="190" font-size="9" font-family="Arial" font-weight="bold" fill="#222" text-anchor="middle">150 ml</text>
+  </g>
+</svg>
